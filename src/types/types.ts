@@ -9,5 +9,6 @@ export interface Card {
     playerHand: Card[];
     dealerHand: Card[];
     gameStatus: 'waiting' | 'playing' | 'finished';
+    
   }
   
