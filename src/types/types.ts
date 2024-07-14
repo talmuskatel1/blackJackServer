@@ -1,14 +1,14 @@
-export interface Card {
-    suit: string;
-    value: string;
-    imageUrl: string;
-  }
+export type Card = {
+  value: string;
+  suit: string;
+  imageUrl: string;
+}
+
   
-  export interface GameState {
+  export type GameState = {
     deck: Card[];
     playerHand: Card[];
     dealerHand: Card[];
     gameStatus: 'waiting' | 'playing' | 'finished';
-    
   }
   

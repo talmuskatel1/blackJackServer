@@ -18,6 +18,7 @@ const createDeck = () => {
 };
 
 export const getInitialGameState = (req: Request, res: Response) => {
+  console.log("Request received at /api/game/initial-state");
   const deck = createDeck();
   const initialState: GameState = {
     deck: shuffleDeck(deck),
